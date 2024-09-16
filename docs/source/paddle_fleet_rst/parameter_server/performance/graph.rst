@@ -422,20 +422,6 @@ Heter-Worker的计算图生成源代码位于 `build_trainer_program <https://gi
                 size=[id_num, id_value_shape],
                 is_sparse=True)
 
-- *paddle.static.nn.embedding*
-
-  .. code:: python
-    
-    import paddle
-    paddle.enable_static()
-
-    # is_sparse=True, 触发参数的稀疏化，加快训练和通信速度
-    embedding = paddle.static.nn.embedding(
-                input=x,
-                size=[id_num, id_value_shape],
-                is_sparse=True)
-
-
 - *paddle.static.nn.sparse_embedding*
 
   .. code:: python
